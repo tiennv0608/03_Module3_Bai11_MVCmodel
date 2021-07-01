@@ -13,7 +13,7 @@
         <td>Description</td>
         <td>Manufacture</td>
     </tr>
-    <c:forEach var="product" items="${requestScope['products']}">
+    <c:forEach var="product" items="${products}">
         <tr>
             <td><a href="/products?action=view&id=${product.id}">${product.name}</a></td>
             <td>${product.price}</td>
