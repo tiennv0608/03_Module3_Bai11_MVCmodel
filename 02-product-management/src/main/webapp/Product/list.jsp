@@ -10,26 +10,27 @@
 <html>
 <head>
     <title>Product List</title>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
 <h1>Products</h1>
-<table border="1">
+<table border="1px solid black">
     <tr>
-        <td>Name</td>
-        <td>Price</td>
-        <td>Description</td>
-        <td>Manufacture</td>
-        <td>Edit</td>
-        <td>Delete</td>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Description</th>
+        <th>Manufacture</th>
+        <th>Edit</th>
+        <th>Delete</th>
     </tr>
     <c:forEach var="product" items="${listProducts}">
         <tr>
-            <td><a href="/products?action=view&id=${product.id}"><c:out value="${product.name}"/></a></td>
-            <td>${product.price}</td>
+            <td style="text-align: center"><a href="/products?action=view&id=${product.id}"><c:out value="${product.name}"/></a></td>
+            <td style="text-align: right">${product.price}</td>
             <td>${product.description}</td>
             <td>${product.manufacture}</td>
-            <td><a href="/products?action=edit&id=${product.id}">edit</a></td>
-            <td><a href="/products?action=delete&id=${product.id}">delete</a></td>
+            <td style="text-align: center"><a href="/products?action=edit&id=${product.id}">edit</a></td>
+            <td style="text-align: center"><a href="/products?action=delete&id=${product.id}">delete</a></td>
         </tr>
     </c:forEach>
 </table>

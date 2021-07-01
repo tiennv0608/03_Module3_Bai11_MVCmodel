@@ -6,32 +6,32 @@
 <body>
 <h1>Edit product</h1>
 <p>
-    <c:if test='${requestScope["message"] != null}'>
-        <span class="message">${requestScope["message"]}</span>
+    <c:if test='${message != null}'>
+        <span class="message" style="color: #234c95FF">${message}</span>
     </c:if>
 </p>
 <p>
     <a href="/products">Back to product list</a>
 </p>
 <form method="post">
-    <fieldset>
+    <fieldset style="width: 300px">
         <legend>Product information</legend>
         <table>
             <tr>
                 <td>Name: </td>
-                <td><input type="text" name="name" id="name" value="${requestScope["product"].getName()}"></td>
+                <td><input type="text" name="name" id="name" value="${product.name}"></td>
             </tr>
             <tr>
                 <td>Price: </td>
-                <td><input type="text" name="price" id="price" value="${requestScope["product"].getPrice()}"></td>
+                <td><input type="text" name="price" id="price" value="${product.price}"></td>
             </tr>
             <tr>
                 <td>Description: </td>
-                <td><input type="text" name="description" id="description" value="${requestScope["product"].getDescription()}"></td>
+                <td><input type="text" name="description" id="description" value="${product.description}"></td>
             </tr>
             <tr>
                 <td>Manufacture: </td>
-                <td><input type="text" name="manufacture" id="manufacture" value="${requestScope["product"].getManufacture()}"></td>
+                <td><input type="text" name="manufacture" id="manufacture" value="${product.manufacture}"></td>
             </tr>
             <tr>
                 <td></td>

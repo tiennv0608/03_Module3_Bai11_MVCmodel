@@ -13,7 +13,7 @@
 </head>
 <body>
 <h1>Search product</h1>
-<form method="post">
+<form method="post" style="width: 300px">
     <fieldset>
         <legend>Search product</legend>
         <table>

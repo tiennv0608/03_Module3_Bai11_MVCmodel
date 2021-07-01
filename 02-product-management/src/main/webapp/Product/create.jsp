@@ -15,14 +15,14 @@
 <h1>Create new Product</h1>
 <p>
     <c:if test="${message!= null}">
-        <span class="message">${message}</span>
+        <span class="message" style="color: #234c95">${message}</span>
     </c:if>
 </p>
 <p>
     <a href="/products">Back to product list</a>
 </p>
 <form method="post">
-    <fieldset>
+    <fieldset style="width: 300px">
         <legend>Product information</legend>
         <table>
             <tr>

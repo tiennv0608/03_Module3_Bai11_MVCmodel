@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>View product</title>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
 <h1>Product details</h1>

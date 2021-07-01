@@ -10,7 +10,7 @@
 </p>
 <form method="post">
     <h3>Are you sure?</h3>
-    <fieldset>
+    <fieldset style="width: 300px">
         <legend>Product information</legend>
         <table>
             <tr>
