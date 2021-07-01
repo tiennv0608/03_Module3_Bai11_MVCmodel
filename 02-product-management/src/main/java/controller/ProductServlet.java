@@ -101,7 +101,7 @@ public class ProductServlet extends HttpServlet {
         Product product = new Product(id, name, price, description, manufacture);
         this.productService.save(product);
         RequestDispatcher dispatcher = request.getRequestDispatcher("Product/create.jsp");
-        request.setAttribute("message", "New customer was created");
+        request.setAttribute("message", "New product was created");
         try {
             dispatcher.forward(request, response);
         } catch (ServletException e) {
@@ -147,7 +147,7 @@ public class ProductServlet extends HttpServlet {
             product.setManufacture(manufacture);
             this.productService.update(id, product);
             request.setAttribute("product", product);
-            request.setAttribute("message", "Customer information was updated");
+            request.setAttribute("message", "Product information was updated");
             dispatcher = request.getRequestDispatcher("Product/edit.jsp");
         }
         try {
