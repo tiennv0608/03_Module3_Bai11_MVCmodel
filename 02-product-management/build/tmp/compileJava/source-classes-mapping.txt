@@ -1,8 +1,8 @@
 model/Product.java
  model.Product
-service/ProductService.java
- service.ProductService
 service/ProductServiceImp.java
  service.ProductServiceImp
+service/ProductService.java
+ service.ProductService
 controller/ProductServlet.java
  controller.ProductServlet

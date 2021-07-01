@@ -33,5 +33,7 @@
         </tr>
     </c:forEach>
 </table>
+<a href="/products?action=create">Create new product</a>
+<a href="/products?action=search">Search product</a>
 </body>
 </html>
