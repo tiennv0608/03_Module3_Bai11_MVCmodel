@@ -12,11 +12,16 @@ public class ProductServiceImp implements ProductService {
 
     static {
         products = new HashMap<>();
-        products.put(1, new Product(1, "Milk", 7000, "Dutch Lady", "Vinamilk"));
-        products.put(2, new Product(2, "Snack", 5000, "Crab me", "Oishi"));
+        products.put(1, new Product(1, "Drink", 7000, "Dutch Lady", "Vinamilk"));
+        products.put(2, new Product(2, "Food", 5000, "Snack", "Oishi"));
         products.put(3, new Product(3, "Drink", 15000, "Cocacola", "Cocacola"));
-        products.put(4, new Product(4, "Karo", 32000, "Egg cake", "Richy"));
-        products.put(5, new Product(5, "Sausage", 24000, "Pig sausage", "Ponnie"));
+        products.put(4, new Product(4, "Food", 32000, "Karo", "Richy"));
+        products.put(5, new Product(5, "Food", 24000, "Sausage", "Ponnie"));
+        products.put(6, new Product(6, "Drink", 10000, "Goodmood", "Pepsico"));
+        products.put(7, new Product(7, "Food", 12000, "Cake", "Highlands"));
+        products.put(8, new Product(8, "Drink", 28000, "Coffee", "Phadin"));
+        products.put(9, new Product(9, "Food", 24000, "Sausage", "Ponnie"));
+        products.put(10, new Product(10, "Food", 24000, "Sausage", "Ponnie"));
     }
 
     @Override
